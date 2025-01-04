@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <!-- favicon ends  -->
+
+    <!-- custom css file link  -->
+    
+    <!-- Bootstrapcode for carousel  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    
+    <!-- magnific popup css link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    
+    <!-- font awesome file link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+    <!-- bootstrap file link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reboot1.css">
+    
+  <title>City Homes</title>
+
+  <style>
+    .carousel-inner img {
+      max-height: 82vh;
+      margin: 0 auto;
+    }
+
+    .carousel {
+      display: flex;
+      height: 82vh;
+      width: auto;
+    }
+
+
+    #mainlogo {
+      width: auto;
+      height: 10vh;
+    }
+
+    body {
+      margin: 15vh 0 0 0;
+    }
+
+    .learn-more-link {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid #d6ccc2;
+      border-radius: 25px;
+      color: #d6ccc2;
+      transition: background-color 0.3s, color 0.3s;
+
+    }
+
+    .learn-more-link:hover {
+      background-color: #d6ccc2;
+      color: var(--orange);
+    }
+
+    #secondpic {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid var(--orange);
+      border-radius: 25px;
+      color: var(--orange);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    #secondpic:hover {
+      background-color: var(--orange);
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- header section starts  -->
+
+  <header class="header fixed-top">
+
+    <a href="#" class="logo"><img src="main-logo.png" id="mainlogo"></a>
+
+    <nav>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#about1">About</a></li>
+        <li><a href="#service1">services</a></li>
+        <li><a href="#blog1">Blogs</a></li>
+        <li><a href="#contact1">contact</a></li>
+      </ul>
+    </nav>
+
+    <form action="/search" class="search-bar"> <input type="text" id="search" name="q" placeholder="Search the site">
+      <button type="submit" id="st">Search </button>
+    </form>
+
+    <div class="fas fa-bars"></div>
+
+  </header>
+
+  <!-- header section ends -->
+
+  <!-- home section starts  -->
+
+
+  <section id="home" class="home container-fluid p-0">
+
+    <!-- carousel starts -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="images/img1.jpg" class="d-block " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Our First Project</h5>
+            <p>This sophisticated client required a celestial feel and that's what we delivered.</p>
+            <a href="project1.html" class="learn-more-link" target="_blank">Explore</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="images/img2.jpg" class="d-block " alt="...">
+          <div class="carousel-caption d-none d-md-block" style="color: black;">
+            <h5>Second Project</h5>
+            <p>The gentlemen’s request was very specific - “create an oasis”.</p>
+            <a href="project2.html" class="learn-more-link" target="_blank" id="secondpic">Explore</a>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="images/img3.jpg" class="d-block " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third Project</h5>
+            <p>This handsomely decorated condo apartment is a testament to luxury and style.</p>
+            <a href="project3.html" class="learn-more-link" target="_blank">Explore</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carousel ends  -->
+
+    <div class="counting">
+
+      <div class="left">
+        <div class="box">
+          <h1 class="count" data-count="1200">1200+</h1>
+          <h3>working hours</h3>
+        </div>
+
+        <div class="box">
+          <h1 class="count" data-count="15">15+</h1>
+          <h3>awards</h3>
+        </div>
+      </div>
+
+
+      <div class="right">
+        <div class="box">
+          <h1 class="count" data-count="1000">1000+</h1>
+          <h3>clients</h3>
+        </div>
+
+        <div class="box">
+          <h1 class="count" data-count="840">840+</h1>
+          <h3>projects</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- home section ends -->
+
+
+  <!-- about section starts  -->
+
+  <section id="about" class="about container">
+    <p id="about1" style="visibility: hidden;">Lorem.</p>
+    <h1 class="heading">about us</h1>
+
+    <div class="row align-items-center">
+
+      <div class="col-md-6 image">
+        <img src="images/img4.jpg" class="d-block w-100" alt="Interior Design 2">
+        <div class="carousel-caption d-none d-md-block" width="90%" alt="">
+        </div>
+
+
+      </div>
+      <div class="col-md-6 info">
+        <h2>the best Interior Design in the city</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste reprehenderit sequi enim porro dolor
+          explicabo distinctio voluptates exercitationem nam excepturi?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatibus sint totam, ea velit eius.
+          Praesentium consequuntur sint porro, similique ut corrupti dolorem eligendi. Sunt porro quos libero illum
+          quo officia laboriosam quisquam, nam totam?</p>
+        <div class="icons">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-pinterest "></a>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- about section ends -->
+
+  <!-- service section starts  -->
+
+  <section id="service" class="service">
+    <p id="service1" style="visibility: hidden;">Lorem.</p>
+    <h1 class="heading">our services</h1>
+
+    <div class="box-container mx-auto">
+
+      <div class="box">
+        <div class="fas fa-palette"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex unde assumenda odio sint voluptatibus sed, quae
+          deserunt fugit voluptates nisi!</p>
+      </div>
+
+      <div class="box">
+        <div class="fas fa-tools"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex unde assumenda odio sint voluptatibus sed, quae
+          deserunt fugit voluptates nisi!</p>
+      </div>
+
+      <div class="box">
+        <div class="fas fa-house-user"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex unde assumenda odio sint voluptatibus sed, quae
+          deserunt fugit voluptates nisi!</p>
+      </div>
+
+      <div class="box">
+        <div class="fas fa-couch"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex unde assumenda odio sint voluptatibus sed, quae
+          deserunt fugit voluptates nisi!</p>
+      </div>
+
+      <div class="box">
+        <div class="fas fa-bed"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex unde assumenda odio sint voluptatibus sed, quae
+          deserunt fugit voluptates nisi!</p>
+      </div>
+
+      <div class="box">
+        <div class="fas fa-bath"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex unde assumenda odio sint voluptatibus sed, quae
+          deserunt fugit voluptates nisi!</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- service section ends -->
+
+  <!-- Blog section starts   -->
+
+  <section id="project" class="project">
+    <p id="blog1" style="visibility: hidden;">Lorem.</p>
+    <div class="heading">Blog</div>
+
+    <div class="box-container mx-auto">
+
+      <div class="box">
+        <a href="blogs/blog1.html" title="house" target="_blank">
+          <img src="images/img1.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="box">
+        <a href="blogs/blog2.html" title="house" target="_blank">
+          <img src="images/img2.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="box">
+        <a href="blogs/blog3.html" title="house" target="_blank">
+          <img src="images/img3.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="box">
+        <a href="blogs/blog2.html" title="house" target="_blank">
+          <img src="images/img4.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="box">
+        <a href="blogs/blog1.html" title="house" target="_blank">
+          <img src="images/img5.jpg" alt="">
+        </a>
+      </div>
+
+      <div class="box">
+        <a href="blogs/blog3.html" title="house" target="_blank">
+          <img src="images/img6.jpg" alt="">
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- project section ends -->
+
+  <!-- contact section starts  -->
+
+  <section id="contact" class="contact">
+    <p id="contact1" style="visibility: hidden;">Lorem.</p>
+    <h1 class="heading">contact us</h1>
+
+    <div class="contact-box-container mx-auto">
+
+      <div class="contact-box">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>mumbai, india - 400104</h3>
+      </div>
+
+      <div class="contact-box">
+        <i class="fas fa-envelope"></i>
+        <h3>xyz@gmail.com</h3>
+      </div>
+
+      <div class="contact-box">
+        <i class="fas fa-phone"></i>
+        <h3>+9100000000</h3>
+      </div>
+
+    </div>
+
+    <div class="form-container mx-auto">
+
+      <form action="">
+
+        <div class="inputBox">
+          <input type="text" placeholder="first name">
+          <input type="text" placeholder="last name">
+        </div>
+        <input type="email" placeholder="e-mail">
+        <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+        <input type="submit" value="send">
+
+      </form>
+
+    </div>
+
+
+  </section>
+
+  <!-- contact section ends -->
+
+  <!-- footer section starts  -->
+
+  <section class="container-fluid footer">
+
+    <div class="row">
+
+      <div class="col-md-3">
+        <h2><img src="main-logo.png" height="50%" width="50%"></h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi rerum facilis, deserunt ea commodi sed
+          voluptatum beatae accusamus nisi pariatur.</p>
+      </div>
+
+      <div class="col-md-3">
+        <h2>our location</h2>
+        <div class="list">
+          <a href="#">india</a>
+          <a href="#">france</a>
+          <a href="#">usa</a>
+          <a href="#">japan</a>
+          <a href="#">russia</a>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <h2>follow us</h2>
+        <div class="list">
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">pinterest</a>
+        </div>
+      </div>
+
+      <div class="col-md-3 text-center text-md-left letter">
+        <h2>newsletter</h2>
+        <p>subscribe for latest updates</p>
+        <input type="email" placeholder="enter your email">
+        <input type="submit" placeholder="subscribe">
+      </div>
+
+    </div>
+
+    <h1 class="credit"><span>&copy; all rights reserved. </span></h1>
+    <h1 class="credit"><span>Created By Harshan Attar | Nayanesh Gugale | Yash Adagale </span></h1>
+
+  </section>
+
+  <!-- footer section ends -->
+
+  <!-- custom js  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+
+  <!-- script for carousel  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
